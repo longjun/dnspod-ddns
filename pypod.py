@@ -10,7 +10,7 @@ reload(sys)
 sys.setdefaultencoding("utf8")
 
 logging.basicConfig(
-    filename = os.path.join(os.getcwd(), 'pypod.log'),
+    filename = os.path.join(os.path.dirname(__file__), 'pypod.log'),
     level = logging.DEBUG,
     format = "%(asctime)s - %(levelname)s: %(message)s")
 
